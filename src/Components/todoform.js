@@ -11,7 +11,7 @@ function Todoform({onAddTask}) {
     
         const newTask = {
           title,
-          status: "pending", // Default status
+          status: "in progress", // Default status
         };
         
         setTitle('');
