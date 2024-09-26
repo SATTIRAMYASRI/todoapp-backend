@@ -68,7 +68,9 @@ function Signup() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div
+    style={{ background: ColorConstants.primaryBg }}
+     className="flex items-center justify-center min-h-screen">
       <form className="w-2/5" onSubmit={submitHandler}>
         <div className="w-full flex flex-col gap-5 mb-5">
           <div>

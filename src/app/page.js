@@ -82,7 +82,9 @@ export default function Home() {
   };
 
   return (
-    <div className='px-32 py-10'>
+    <div 
+    style={{ background: ColorConstants.primaryBg }}
+    className='px-32 py-10'>
       <h1 className='text-center text-3xl mb-5'>Todos</h1>
       <Todoform onAddTask={addTask} />
       <Todolist tasks={tasks} deleteTask={deleteTask} updateTask={updateTask} />
