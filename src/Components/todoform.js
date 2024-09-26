@@ -19,7 +19,7 @@ function Todoform({onAddTask}) {
       };
   
   return (
-    <form className="mb-5" onSubmit={handleSubmit}>
+    <form className="mb-5 w-full " onSubmit={handleSubmit}>
       <input
          onChange={(e) => setTitle(e.target.value)}
         value={title}

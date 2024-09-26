@@ -84,8 +84,8 @@ export default function Home() {
 
   return (
     <div 
-    style={{ background: ColorConstants.primaryBg }}
-    className='px-32 py-10'>
+    style={{ background: ColorConstants.primaryBg,height: '100vh' }}
+    className='w-full flex flex-col items-center justify-start px-32 py-10'>
       <h1 className='text-center text-3xl mb-5'>Todos</h1>
       <Todoform onAddTask={addTask} />
       <Todolist tasks={tasks} deleteTask={deleteTask} updateTask={updateTask} />

@@ -16,7 +16,7 @@ function TodoList({tasks,deleteTask,updateTask}) {
   
 
   return (
-    <div>
+    <div className='w-full'>
     <ul style={{ listStyleType: 'none', padding: 0 }}>
       {tasks.map((task) => (
         <TodoItem key={task.id} task={task} onDelete={deleteTask} onEdit={onEdit}/>
